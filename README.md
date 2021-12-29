@@ -8,12 +8,14 @@ Converts excel file (both .xls and .xlsx) to .tmx that can be imported into Trad
 
 Example:
 
-In pytmx.py, fill in the variables with information accurate to your use case and run PYTMX.excel_to_tmx()
+Fill in the variables with information accurate to your use case and run pytmx.excel_to_tmx()
 
-    filepath = r""
-    srclang = "en-us",
-    tarlang = "ko-kr"
+    from pytmx import pytmx
 
-    pytmx = PYTMX(filepath, srclang, tarlang)
+        filepath = r""
+        srclang = "en-us",
+        tarlang = "ko-kr"
 
-    pytmx.excel_to_tmx()
+        ptx = pytmx(filepath, srclang, tarlang)
+
+        ptx.excel_to_tmx()

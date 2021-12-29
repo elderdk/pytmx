@@ -1,4 +1,4 @@
-from xls_to_tmx.xls_to_tmx import convert
+from pytmx.xls_to_tmx import convert
 from pathlib import Path
 
 
