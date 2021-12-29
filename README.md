@@ -1,5 +1,9 @@
 # pytmx
-Python-written tool for handling tmx files
+Python-written tool for handling tmx files.
+
+excel_to_tmx()
+--------------
+Converts excel file (both .xls and .xlsx) to .tmx that can be imported into Trados Translation Memory.
 
 
 Example:
