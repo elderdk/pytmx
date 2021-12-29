@@ -7,7 +7,7 @@ from .constants import (
 )
 
 from .utils import (
-  get_tmxfilepath,
+  get_outputtmxfilepath,
   get_complete_kwargs,
   show_progress,
   get_sh_maxrows_cell_value
@@ -18,10 +18,10 @@ def convert(filepath, **kwargs):
   
   max_rows, cell_value, start_row, col = get_sh_maxrows_cell_value(filepath)
 
-  tmx_filepath = get_tmxfilepath(filepath)
+  output_tmx_filepath = get_outputtmxfilepath(filepath)
   kwargs = get_complete_kwargs(**kwargs)
 
-  with open(tmx_filepath, mode='a', encoding='utf-8') as f:
+  with open(output_tmx_filepath, mode='a', encoding='utf-8') as f:
 
     f.write(HEADER.format(**kwargs))
 
@@ -37,7 +37,7 @@ def convert(filepath, **kwargs):
         show_progress(row)
 
     f.write(FOOTER)
-    print('Saved to ' + str(tmx_filepath))
+    print('Saved to ' + str(output_tmx_filepath))
 
 
 if __name__=='__main__':

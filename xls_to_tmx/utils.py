@@ -2,7 +2,7 @@ from .constants import BASE_DIR, DEFAULT_KWARGS
 from pathlib import Path
 
 
-def get_tmxfilepath(filepath):
+def get_outputtmxfilepath(filepath):
   tmx_filename = Path(filepath).stem + '.tmx'
   return BASE_DIR.joinpath(tmx_filename)
 
