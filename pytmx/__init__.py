@@ -8,5 +8,5 @@ __author__      = 'Daniel K. Elder'
 __url__         = 'https://github.com/elderdk/pytmx'
 
 from .api import (
-    PYTMX
+    PYTMX as pytmx
 )
