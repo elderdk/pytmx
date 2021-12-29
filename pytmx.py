@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 if __name__=='__main__':
-    excel_file = r"C:\Users\elder\Desktop\KRAFTON Glossary-JOEL_edited - 복사본.xlsx"
+    excel_file = r""
 
     dict = {
     'tmname': Path(excel_file).stem + ' TM',
