@@ -1,7 +1,7 @@
 from pytmx import pytmx
 
 if __name__=='__main__':
-    filepath = r"C:\Users\elder\Desktop\KRAFTON Glossary-JOEL_edited - 복사본.xlsx"
+    filepath = r""
     srclang = "en-us",
     tarlang = "ko-kr"
 
