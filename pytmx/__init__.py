@@ -1,5 +1,4 @@
-    """pytmx is a python tool to work with tmx files.
-    """
+"""pytmx is a python tool to work with tmx files."""
 
 __copyright__   = 'Copyright (C) 2021 Daniel K. Elder'
 __version__     = '0.0.1'

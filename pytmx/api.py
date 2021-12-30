@@ -1,4 +1,4 @@
-from pytmx.xls_to_tmx import convert
+import pytmx.xls_to_tmx
 from pathlib import Path
 
 
@@ -17,14 +17,7 @@ class PYTMX:
         'tarlang': self.tarlang,
         }
 
-        convert(self.filepath, **dict)
+        pytmx.xls_to_tmx.convert(self.filepath, **dict)
 
 if __name__=='__main__':
-
-    filepath = r""
-    srclang = "en-us",
-    tarlang = "ko-kr"
-
-    pytmx = PYTMX(filepath, srclang, tarlang)
-
-    pytmx.excel_to_tmx()
+    pass
