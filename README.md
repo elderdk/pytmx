@@ -1,5 +1,5 @@
 # pytmx
-Python-written tool for handling tmx files.
+Python tool for handling tmx files.
 
 excel_to_tmx()
 --------------
