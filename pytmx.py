@@ -2,7 +2,7 @@ from pytmx import pytmx
 
 if __name__=='__main__':
     filepath = r""
-    srclang = "en-us",
+    srclang = "en-us"
     tarlang = "ko-kr"
 
     ptx = pytmx(filepath, srclang, tarlang)
