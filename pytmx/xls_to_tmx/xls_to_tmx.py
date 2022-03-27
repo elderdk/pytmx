@@ -28,7 +28,7 @@ def convert(filepath, **kwargs):
     for row in range(start_row, max_rows):
         try:
           kwargs['source_seg'] = html.escape(cell_value(row, col))
-          kwargs['target_seg'] = html.escape(cell_value(row, col))
+          kwargs['target_seg'] = html.escape(cell_value(row, col+1))
             
         except IndexError as e:
           pass

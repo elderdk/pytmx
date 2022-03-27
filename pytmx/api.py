@@ -1,4 +1,4 @@
-import pytmx.xls_to_tmx
+import xls_to_tmx
 from pathlib import Path
 
 
@@ -17,7 +17,8 @@ class PYTMX:
         'tarlang': self.tarlang,
         }
 
-        pytmx.xls_to_tmx.convert(self.filepath, **dict)
+        xls_to_tmx.convert(self.filepath, **dict)
 
 if __name__=='__main__':
-    pass
+    ptx = PYTMX(r"C:\Users\elder\Desktop\windless_glossary\WINDLESS_Glossary_20220221 (1).xlsx", 'kr', 'en')
+    ptx.excel_to_tmx()
